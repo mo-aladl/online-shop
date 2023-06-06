@@ -81,12 +81,12 @@ const ProductDetails = () => {
 
           <div className="box">
             <div className="row">
-              <h2>{data.productName}</h2>
-              <span>${data.price}</span>
+              <h2 style={{ fontSize: "28px" }} >{data.productName}</h2>
+              <span style={{ fontSize: "18px" }} >${data.price}</span>
             </div>
             {/* <Colors colors={data.colors} /> */}
-
-            <p>{data.description}</p>
+              <p style={{ fontSize: "14px" }} >lorem upsum dolar sit amet conssecledajdn </p>
+            <p style={{ fontSize: "18px" }}>{data.description}</p>
 
             <DetailsThumb
               images={data.imageLink}
@@ -129,7 +129,7 @@ const ProductDetails = () => {
               </div>
             ) : (
               <Button
-                sx={{ textTransform: "capitalize", p: 1, lineHeight: 1.1 }}
+                sx={{ marginTop:"33px" , textTransform: "capitalize", p: 1, lineHeight: 1.1 }}
                 variant="contained"
                 color="primary"
                 onClick={() => {
